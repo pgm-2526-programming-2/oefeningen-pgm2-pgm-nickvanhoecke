@@ -33,7 +33,7 @@ showCalculation();
 
 
 const name = "Nick";
-const divisions = () => [];
+const divisions = () => {};
 const multiplier = function () {};
 
 function selectRandomStudent(arr) {
@@ -55,11 +55,10 @@ function checkAnswer(answer, solution, callback) {
   if (answer === solution) {
     callback("✅");
     return true;
-    +_;
   }
 
   callback("❌");
   return false;
 }
 
-checkAnswer("Ja", "Oplossing", showMessage(message));
+checkAnswer("Ja", "Oplossing", showMessage);
