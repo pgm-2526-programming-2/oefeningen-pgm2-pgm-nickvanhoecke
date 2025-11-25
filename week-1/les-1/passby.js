@@ -1,4 +1,4 @@
-const name = "Nick" // primitief
+const firstName = "Nick" // primitief
 const age = 20 // primitief
 const isStudent = true // primitief
 const hobbies = ["Gaming", "Watching shows"] // samengesteld of reference
@@ -7,17 +7,21 @@ const address = {
     number: 1
 } // samengesteld of reference
 
-let nickname = name
+let nickName = firstName
 const interests = hobbies
 const todos = interests
 
-nickname = "Gamer"
-interests.push("reading")
+nickName = "IronMetalX"
+todos.push("reading")
 
 console.log(interests);
-console.log(nickname);
+console.log(nickName);
 
 console.log(interests, hobbies, todos);
+
+
+// =============================================================
+
 
 let total = 0;
 
@@ -31,13 +35,12 @@ addFiveToNumber(10)
 console.log("Totaal: " + total);
 
 
-
+// =============================================================
 
 
 function doubleNumber(num) {
     num = num * 2
     console.log("Binnen functie: " + num);
-    
 }
 
 function doubleNumberWithReference(obj) {
@@ -45,14 +48,14 @@ function doubleNumberWithReference(obj) {
     console.log("Binnen functie: " + obj.number);
 }
 
-
 let originalNumber = 5
 let originalNumberAsReferenceType = {number:  5}
 
 
 doubleNumber(originalNumber)
 doubleNumberWithReference(originalNumberAsReferenceType)
+
 console.log("Original number uit functie", originalNumber);
-console.log("Original number uit functie", originalNumberAsReferenceType);
+console.log("Original number uit functie", originalNumberAsReferenceType.number);
 
 

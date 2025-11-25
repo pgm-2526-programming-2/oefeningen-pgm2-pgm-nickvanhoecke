@@ -1,20 +1,22 @@
 // Oefening: multiply, division.
 
-function sum(a, b) {
+function sum(a = 0, b = 0) {
   return a + b;
 }
 
-function multiply(a, b) {
+function multiply(a = 0, b = 0) {
   return a * b;
 }
 
-function division(a, b) {
+function division(a = 0, b = 0) {
   return a / b;
 }
 
-function subtraction(a, b) {
+function subtraction(a = 0, b = 0) {
   return a - b;
 }
+
+sum(5, 5)
 
 // Oefening: Maak een functie showCalculation die 3
 // parameters heeft. 2 getallen en een van onze functies
@@ -23,13 +25,14 @@ function showCalculation(a = 0, b = 0, calculate = sum) {
   console.log(calculate(a, b));
 }
 
+
 showCalculation(5, 5, multiply);
 showCalculation(5, 5, division);
 showCalculation(5, 5, sum);
 showCalculation(5, 5, subtraction);
 showCalculation();
 
-//-----------------------------------------------------------
+// =============================================================
 
 
 const name = "Nick";
@@ -62,3 +65,5 @@ function checkAnswer(answer, solution, callback) {
 }
 
 checkAnswer("Ja", "Oplossing", showMessage);
+
+
