@@ -1,15 +1,19 @@
 const numbers = [1, 2, 3, 4, 5];
-
 for (const number of numbers) {
     console.log(number);
 }
-
-numbersString = "Hallo";
+//=================================
+let numbersString = "Hallo";
 for (const number of numbers) {
     numbersString += " " + number
 }
-
 console.log(numbersString);
+
+
+
+
+console.log("===============================");
+
 
 
 
