@@ -1,17 +1,10 @@
 let woordenArray = ['appel', 'peer', 'kiwi', 'banaan'];
 let langsteWoord = woordenArray.reduce((langste, woord) => {
-    if (langste.length < woord.length) {
+    if (langste.length > woord.length) {
         return langste 
     } else {
         return woord
     }
 })
-
-// langsteWoord = ""
-// for (const woord of woordenArray) {
-//     if (langsteWoord.length < woord.length)
-//         langsteWoord = woord
-// }
-
 
 console.log(langsteWoord); // schrijf hier de logica om het langste woord te vinden // geeft 'banaan'
